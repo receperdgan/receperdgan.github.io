@@ -1,49 +1,28 @@
-import { useState, useEffect } from 'react'
-import { NavBar } from './components/nav-bar/NavBar'
-import { Footer } from './components/footer/Footer'
-import { HomePage } from './pages/home/Home'
-import { AboutPage } from './pages/about/About'
-import { ProjectsPage } from './pages/projects/Projects'
-import { ContactPage } from './pages/contact/Contact'
+import { Contact } from "./components/Contact";
+import { Footer } from "./components/Footer";
+import { Masthead } from "./components/Masthead";
+import { Nav } from "./components/Nav";
+import { Projects } from "./components/Projects";
+import { Work } from "./components/Work";
+import { Writing } from "./components/Writing";
+import { useTheme } from "./hooks/useTheme";
 
 function App() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light')
-
-  useEffect(() => {
-    // Check if user has a preference stored
-    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    
-    if (savedTheme) {
-      setTheme(savedTheme)
-      document.documentElement.classList.toggle('dark', savedTheme === 'dark')
-    } else if (prefersDark) {
-      setTheme('dark')
-      document.documentElement.classList.add('dark')
-    }
-  }, [])
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light'
-    setTheme(newTheme)
-    document.documentElement.classList.toggle('dark')
-    localStorage.setItem('theme', newTheme)
-  }
+  const { theme, toggle } = useTheme();
 
   return (
-    <div className="min-h-screen">
-      <NavBar theme={theme} toggleTheme={toggleTheme} />
-      
+    <>
+      <Nav theme={theme} onToggle={toggle} />
       <main>
-        <HomePage />
-        <AboutPage />
-        <ProjectsPage />
-        <ContactPage />
+        <Masthead />
+        <Work />
+        <Writing />
+        <Projects />
+        <Contact />
       </main>
-
       <Footer />
-    </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;

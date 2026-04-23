@@ -24,3 +24,12 @@ dist-ssr
 *.sw?
 .cursorignore
 github-portfolio-rules.mdc
+
+# Claude Code / MCP scratch
+.playwright-mcp/
+.claude/
+
+# Debug screenshots at repo root (Playwright captures, design comps)
+/*.png
+/*.jpeg
+/*.jpg
