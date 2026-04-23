@@ -55,7 +55,7 @@ export function Masthead() {
             LinkedIn →
           </a>
           <a
-            href="https://github.com/receperdog"
+            href="https://github.com/receperdgan"
             target="_blank"
             rel="noopener noreferrer"
             className="no-underline transition-colors hover:text-accent"

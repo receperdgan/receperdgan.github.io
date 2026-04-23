@@ -12,7 +12,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Deployment
 
-GitHub Pages serves this as a user site (`receperdog.github.io`) from the `/docs` folder of `main`. Two deploy paths exist and they conflict — use the README path:
+GitHub Pages serves this as a user site (`receperdgan.github.io`) from the `/docs` folder of `main`. Two deploy paths exist and they conflict — use the README path:
 
 1. `npm run build` → produces `dist/`.
 2. `cp -r dist/* docs/` → overwrite the served folder.

@@ -4,7 +4,7 @@ A modern, responsive personal portfolio website built with React, TypeScript, an
 
 ## Live Demo
 
-Visit the portfolio at [receperdog.github.io](https://receperdog.github.io)
+Visit the portfolio at [receperdgan.github.io](https://receperdgan.github.io)
 
 ## Features
 
@@ -34,8 +34,8 @@ Visit the portfolio at [receperdog.github.io](https://receperdog.github.io)
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/receperdog/receperdog.github.io.git
-   cd receperdog.github.io
+   git clone https://github.com/receperdgan/receperdgan.github.io.git
+   cd receperdgan.github.io
    ```
 
 2. Install dependencies:
@@ -87,7 +87,7 @@ Since this is a single-page application (SPA), a custom 404.html file is include
 ## Folder Structure
 
 ```
-receperdog.github.io/
+receperdgan.github.io/
 ├─ src/
 │  ├─ pages/              # Page components
 │  │  ├─ home/

@@ -45,7 +45,7 @@ export function Projects() {
 
       <p className="mt-10 text-center font-mono text-xs uppercase tracking-widest text-zinc-500">
         <a
-          href="https://github.com/receperdog"
+          href="https://github.com/receperdgan"
           target="_blank"
           rel="noopener noreferrer"
           className="no-underline transition-colors hover:text-accent"
