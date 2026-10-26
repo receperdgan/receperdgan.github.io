@@ -6,7 +6,7 @@ export function Contact() {
       id="contact"
       eyebrow="04 · Contact"
       title="Let’s talk."
-      intro="Open to staff/senior backend and platform-engineering roles, agentic tooling work, and thoughtful conversations about the AI-assisted SDLC."
+      intro="Open to senior backend and AI platform engineering roles, agentic tooling work, and thoughtful conversations about the AI-assisted SDLC."
     >
       <div className="grid gap-6 md:grid-cols-[12rem_1fr] md:gap-12">
         <p className="font-mono text-xs uppercase tracking-widest text-zinc-500">
